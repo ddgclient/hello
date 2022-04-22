@@ -10,8 +10,5 @@ jobs:
     steps:
       - name: testrun
         run: powershell "dir env:"
-  build:
-    runs-on: self-hosted
-    steps:
       - name: compile
         run: "dotnet tool restore"
