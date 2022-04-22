@@ -13,7 +13,7 @@ jobs:
         run: powershell "dir env:"
       - name: restore
         run: "dotnet tool restore"
-      - name: compile
+      - name: compiles
         run: ./pipeline_scripts/CompileAll.cmd Base -ci $GITHUB_WORKSPACE
       - name: script
         run: python print.py
