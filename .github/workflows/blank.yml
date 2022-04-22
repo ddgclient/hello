@@ -14,5 +14,5 @@ jobs:
         run: "dotnet tool restore"
       - name: compile
         # run:  "${{ format('{0}/pipeline_scripts/CompileAll.cmd', github.workspace) }}"
-        run: print.py
+        run: python print.py
           
