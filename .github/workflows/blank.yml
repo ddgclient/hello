@@ -5,9 +5,13 @@ on:
   push:
 
 jobs:
-  build:
+  testenv:
     runs-on: self-hosted
-    
     steps:
       - name: testrun
         run: powershell "dir env:"
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: compile
+        run: "dotnet tool restore"
