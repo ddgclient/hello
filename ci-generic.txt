@@ -1,7 +1,7 @@
 variables:
   pValPath: .\pipeline_scripts\pVal\PrimeValTool.exe
   tosPath: C:\intel\hdmt\hdmtOS_3.10.0.0_Release
-  GIT_DEPTH: 2
+  GIT_DEPTH: 1
   postBuffer: 26,214,400
   GET_SOURCES_ATTEMPTS: 5
 
